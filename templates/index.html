@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Prediction</title>
+</head>
+<body>
+    <h2>Heart Disease Prediction Form</h2>
+    <form action="/predict" method="POST">
+        <input type="number" step="any" name="age" placeholder="Age" required><br><br>
+        <input type="number" step="any" name="sex" placeholder="Sex (1=M, 0=F)" required><br><br>
+        <input type="number" step="any" name="cp" placeholder="Chest Pain Type (0-3)" required><br><br>
+        <input type="number" step="any" name="trestbps" placeholder="Resting BP" required><br><br>
+        <input type="number" step="any" name="chol" placeholder="Cholesterol Level" required><br><br>
+        <input type="number" step="any" name="fbs" placeholder="Fasting Blood Sugar (>120 mg/dl: 1/0)" required><br><br>
+        <input type="number" step="any" name="restecg" placeholder="Rest ECG (0-2)" required><br><br>
+        <input type="number" step="any" name="thalach" placeholder="Max Heart Rate" required><br><br>
+        <input type="number" step="any" name="exang" placeholder="Exercise Angina (1/0)" required><br><br>
+        <input type="number" step="any" name="oldpeak" placeholder="Oldpeak" required><br><br>
+        <input type="number" step="any" name="slope" placeholder="Slope (0-2)" required><br><br>
+       <input type="number" step="any" name="ca" placeholder="Number of Major Vessels (0-4)" required><br><br>
+        <input type="number" step="any" name="thal" placeholder="Thal (1=normal,2=fixed,3=reversable)" required><br><br>
+        <button type="submit">Predict</button>
+    </form>
+    <h3>{{ prediction_text }}</h3>
+</body>
+</html>
